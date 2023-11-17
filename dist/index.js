@@ -5,17 +5,26 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = Modal;
 var _react = _interopRequireDefault(require("react"));
-var _reactDom = require("react-dom");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+// import './style/style.css';
+
 function Modal(_ref) {
-  var closeModal = _ref.closeModal,
+  var show = _ref.show,
+    defaultStyle = _ref.defaultStyle,
+    closeModal = _ref.closeModal,
     iconClose = _ref.iconClose,
     title = _ref.title,
     hideTitle = _ref.hideTitle,
+    icon = _ref.icon,
+    hideIcon = _ref.hideIcon,
     text = _ref.text,
     hideText = _ref.hideText;
-  return /*#__PURE__*/(0, _reactDom.createPortal)( /*#__PURE__*/_react["default"].createElement("div", {
-    className: "modal"
+  var showHide = show ? 'modal display-block' : 'modal display-none';
+  var modalStyle = defaultStyle ? 'modal-main default-style' : ' modal-main';
+  return /*#__PURE__*/_react["default"].createElement("div", {
+    className: showHide
+  }, /*#__PURE__*/_react["default"].createElement("section", {
+    className: modalStyle
   }, /*#__PURE__*/_react["default"].createElement("button", {
     className: "close-modal",
     onClick: closeModal
@@ -24,7 +33,11 @@ function Modal(_ref) {
     alt: "close icon"
   })), hideTitle ? null : /*#__PURE__*/_react["default"].createElement("h2", {
     className: "modal-title"
-  }, title), hideText ? null : /*#__PURE__*/_react["default"].createElement("p", {
+  }, title), hideIcon ? null : /*#__PURE__*/_react["default"].createElement("img", {
+    className: "modal-img",
+    src: icon,
+    alt: ""
+  }), hideText ? null : /*#__PURE__*/_react["default"].createElement("p", {
     className: "modal-text"
   }, text)));
 }
