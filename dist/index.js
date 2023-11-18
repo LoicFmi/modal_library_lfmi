@@ -20,7 +20,10 @@ function Modal(_ref) {
     text = _ref.text,
     hideText = _ref.hideText;
   var showHide = show ? 'modal display-block' : 'modal display-none';
-  var modalStyle = defaultStyle ? 'modal-main default-style' : ' modal-main';
+  var modalStyle = defaultStyle ? 'modal-style modal-default' : 'modal-style';
+  var titleStyle = defaultStyle ? 'title-style title-default' : ' title-style';
+  var iconStyle = defaultStyle ? 'icon-style icon-default' : ' icon-style';
+  var textStyle = defaultStyle ? 'text-style text-default' : ' text-style';
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: showHide
   }, /*#__PURE__*/_react["default"].createElement("section", {
@@ -32,13 +35,13 @@ function Modal(_ref) {
     src: iconClose,
     alt: "close icon"
   })), hideTitle ? null : /*#__PURE__*/_react["default"].createElement("h2", {
-    className: "modal-title"
+    className: titleStyle
   }, title), hideIcon ? null : /*#__PURE__*/_react["default"].createElement("img", {
-    className: "modal-img",
+    className: iconStyle,
     src: icon,
     alt: ""
   }), hideText ? null : /*#__PURE__*/_react["default"].createElement("p", {
-    className: "modal-text"
+    className: textStyle
   }, text)));
 }
 module["export"] = {
