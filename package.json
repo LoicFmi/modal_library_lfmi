@@ -1,6 +1,6 @@
 {
   "name": "modal-library-lfmi",
-  "version": "0.3.27",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
@@ -8,7 +8,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "URL_OF_YOUR_REPOSITORY"
+    "url": "https://github.com/LoicFmi/modal_library_lfmi"
   },
   "devDependencies": {
     "@babel/cli": "^7.23.0",
