@@ -1,6 +1,24 @@
 import React from 'react';
 import './style/style.css';
 
+/**
+ * ConfirmationModal
+ *
+ * @param   {boolean}  show          | display modal or not
+ * @param   {boolean}  defaultStyle  | use the default styling or not
+ * @param   {function} closeModal    | handle modal closing
+ * @param   {string}   iconClose     | image for the close button
+ * @param   {string}   title         | define the modal title
+ * @param   {boolean}  hideTitle     | display modal title or not
+ * @param   {string}   icon          | define the modal icon
+ * @param   {boolean}  hideIcon      | display modal icon or not
+ * @param   {string}   text          | define the modal text
+ * @param   {boolean}  hideText      | display modal text
+ *
+ * @returns {DOMElement}
+ *
+ */
+
 export default function ConfirmationModal({
   show,
   defaultStyle,
