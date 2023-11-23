@@ -1,5 +1,5 @@
 import React from 'react';
-// import './style/style.css';
+import './style/style.css';
 
 export default function ConfirmationModal({
   show,
@@ -34,4 +34,4 @@ export default function ConfirmationModal({
   );
 }
 
-module.export = { Modal };
+module.export = { ConfirmationModal };

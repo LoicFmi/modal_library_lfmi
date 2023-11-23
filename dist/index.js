@@ -3,12 +3,11 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = Modal;
+exports["default"] = ConfirmationModal;
 var _react = _interopRequireDefault(require("react"));
+require("./style/style.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-// import './style/style.css';
-
-function Modal(_ref) {
+function ConfirmationModal(_ref) {
   var show = _ref.show,
     defaultStyle = _ref.defaultStyle,
     closeModal = _ref.closeModal,
@@ -45,5 +44,5 @@ function Modal(_ref) {
   }, text)));
 }
 module["export"] = {
-  Modal: Modal
+  ConfirmationModal: ConfirmationModal
 };

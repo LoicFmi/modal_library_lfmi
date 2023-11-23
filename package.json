@@ -1,6 +1,6 @@
 {
   "name": "modal-library-lfmi",
-  "version": "0.3.25",
+  "version": "0.3.27",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
