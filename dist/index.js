@@ -7,6 +7,24 @@ exports["default"] = ConfirmationModal;
 var _react = _interopRequireDefault(require("react"));
 require("./style/style.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+/**
+ * ConfirmationModal
+ *
+ * @param   {boolean}  show          | display modal or not
+ * @param   {boolean}  defaultStyle  | use the default styling or not
+ * @param   {function} closeModal    | handle modal closing
+ * @param   {string}   iconClose     | image for the close button
+ * @param   {string}   title         | define the modal title
+ * @param   {boolean}  hideTitle     | display modal title or not
+ * @param   {string}   icon          | define the modal icon
+ * @param   {boolean}  hideIcon      | display modal icon or not
+ * @param   {string}   text          | define the modal text
+ * @param   {boolean}  hideText      | display modal text
+ *
+ * @returns {DOMElement}
+ *
+ */
+
 function ConfirmationModal(_ref) {
   var show = _ref.show,
     defaultStyle = _ref.defaultStyle,
